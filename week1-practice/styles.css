@@ -1,0 +1,9 @@
+:root {
+    --primary-color:#123;
+    
+}
+body {
+    font-family:'Courier New', Courier, monospace;
+    max-width: 950px;
+    padding: 20px;
+}
