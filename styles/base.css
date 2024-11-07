@@ -72,29 +72,29 @@ h1, p{
 }
 
 .img{
-    max-width: 100%;
-    height: auto;
+
 
     //*width: 200px;
     height: 200px;*//
 }
 .right{
     margin: 0;
-    padding: 50px;
+    padding: 150px;
     grid-column: 2;
     grid-row: 2;
     background-color: #230823;
     color: #cec6eb;
     height: 100%;
     box-sizing: border-box; 
-
+   
 }
 
 .line-container{
     list-style: none;
-    color: #451145;
-    
-    
+    color: #e9a4e9;  
+}
+.line-container li a {
+    color:#DDC9E1
 }
 
 footer{
