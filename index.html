@@ -3,27 +3,56 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content ="width=device-width, initial-scale=1.0">    
-        <title>Carla Centurion | WDD 131</title>
+        <title>WDD 131 - Dynamic Web Fundamentals - Carla Centurion</title>
+        <meta name="author" content = "Carla Centurion"/>
+        <meta name="description" content= "WDD 131 - Dynamic Web Fundamentals,  Carla Centurion. About me and my country"/>
+        <link rel="stylesheet" href="styles/base.css"> 
     </head>
 
     <body>
         <header>
-            <nav>
-                <a href="#">Home</a>
-                <a href="wwr/">Projects</a>
-                <a href="wwr/site-pan-rafting.html">Services</a>
-                <a href="wwr/site-pan-rafting.html">Contact Us</a>
+            <h1>WDD 131 - Dynamic Web Fundamentals ~ Carla Centurion </h1>
+            <div class="links">
+                <nav>
+                    <a href="https://www.linkedin.com/in/carla-centurion-a07484106/">My linked in</a>
+                    <a href="https://byui.instructure.com/">I-learn</a>
+                    <a href="https://www.churchofjesuschrist.org/study/scriptures/dc-testament/dc/121?lang=eng&id=p7-p8#p7">Scripture</a>
+                    <a href="#">Final Project</a>
 
-            </nav>
+                </nav>
+            </div>
         </header>
         <main>
-            <h1>Carla Centurion | WDD 130 </h1>
-            <img src="images/profile.webp" alt="Hello! My name is Carla Centurion" width="200">
-            <p>Hello! My name is <strong>Carla Centurion</strong>. I'm from <strong>Buenos Aires, Argentina.</strong> A little bit about myself...</p>
-            <p>I'm an English teacher! I enjoy reading and watching movies and series. I like to watch the same movie several times and pay attention to diferent points of views or different characters or settings.</p>
-            <p>On my free time I like to spend time with my family. We love to travel but sometimes is hard to find time and money.</p>
-    
+            
+            <h1> About me </h1>
+            <div class="img">
+                <img src="images/carla.centurion.jpg" alt="Hello! My name is Carla Centurion" width="200">
+            </div>
+            <div class="text">
+                <p>Hello! My name is <strong>Carla Centurion</strong>. I'm from <strong>Buenos Aires, Argentina.</strong> A little bit about myself...</p>
+                <p>I'm an English teacher! I enjoy reading and watching movies and series. I like to watch the same movie several times and pay attention to diferent points of views or different characters or settings.</p>
+                <p>On my free time I like to spend time with my family. We love to travel but sometimes is hard to find time and money.</p>
+            </div>
+
         </main>
+
+        <div class="right">
+            <h1>Web Dev resources</h1>
+            <div class="line-container">
+                <ul>
+                    <li><a href ="https://dev.to/">Dev. to Community</a></li>
+                    <li><a href ="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                    <li><a href ="https://css-tricks.com/">Css Tricks</a></li>
+                    <li><a href ="https://codefinity.com/get-started/spa/v8_new_brl?utm_source=google&utm_medium=cpc&utm_campaign=21415070126&utm_content=162332657925&utm_term=w3schools&gad_source=1&gclid=CjwKCAiAxKy5BhBbEiwAYiW--22IjuuMqFB_CIwY1LMKQ5ZXcq2DZvuK0bqTKs1XuMgqdPZEunft-RoCJJEQAvD_BwE">W3 Schools</a></li>
+                    <li><a href ="https://www.udemy.com/">Udemy</a></li>
+                    <li><a href ="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+               </ul>
+            </div>
+        </div>
         <footer>
-            <p>©2024 😊​ Carla Centurion ❤️​</p>
+            <p>© <span id="lastYear"></span> ❤️​ Carla Centurion ❤️​</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
         </footer>
+        <script src="scripts/getdates.js"></script>
+    </body> 
+</html>   
