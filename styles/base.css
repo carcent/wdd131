@@ -1,19 +1,22 @@
+* {
+    margin:0;
+    padding:0;
+}
 body {
     font-family: Arial, Helvetica, sans-serif;
     width: 100%;
     background-color: #451145;
-    margin:0;
-    padding:0;
+    border: 1px solid rgb(22, 22, 22);
     display:grid;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: auto 1fr auto;
-    gap:20px
+    gap:15px
 
 }
 header h1{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     color:#DDC9E1;
-    align-items: center;
+    text-align: center;
 
 }
 
@@ -27,29 +30,32 @@ header {
     align-items: center;
    
 }
-.links{
+nav{
+    background: #230823;
+    height:50px;
+    
+}
+nav ul li {
+    float: center;
     background-color: #451145;
-    list-style: none;
-    margin: 0;
-    padding:20px;  
+    height: 10px;
+    list-style: none; 
+    line-height: 80px; 
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    gap: 20px;
+    justify-content: space-evenly;
 }
 
-.links a {
-     
+nav a { 
     color:#E6CDE6;
     text-decoration: none;
     font-weight: bold;
-
+    gap:50px;
 }
 
 main{
     grid-column: 1;
     grid-row: 2;
-    padding: 20px;
     color:#cec6eb;
     background-color: #230823;
     height: 100%; 
@@ -62,7 +68,9 @@ main{
     gap: 20px;
       
 }
-
+.clearfix{
+    clear:booth;
+}
 
 h1, p{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -73,11 +81,10 @@ h1, p{
 .tile{
     grid-column: 1/3;
     grid-row: 1;
-    margin:0;
-    padding: 10px;
     background-color: #451145;
     justify-content: center;
     height:10px;
+    text-align: center;
 }
 .img{
 
@@ -93,24 +100,27 @@ h1, p{
     display:block;
     box-sizing: border-box; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    justify-content: center;
+    text-align: center;
+    height: 10px;
+    padding:40px;
+    
 }
 .description{
     grid-row: 4;
     grid-column: 1 / 3;
+    border-top: 1px solid #130113;
+    padding:10px;
 
 }
 .right{
-    margin: 0;
-    padding: 150px;
     grid-column: 2;
     grid-row: 2;
     background-color: #230823;
     color: #cec6eb;
-    height: 100%;
     box-sizing: border-box; 
     grid-template-rows: auto 3fr;
-    grid-template-columns: 1 fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:20;
    
 }
 
@@ -118,16 +128,21 @@ h1, p{
     grid-row: 1;
     grid-column: 1/3;
     display:block;
-    padding:10px;
     background-color: #451145;
-    justify-content: center;
+    text-align: center;
 }
 
 .line-container{
+    grid-column: 2;
+    grid-row: 2;
+
+}
+.line-container ul li{
     grid-row: 2;
     grid-column: 2;
     list-style: none;
     color: #e9a4e9;  
+
 }
 .line-container li a {
     color:#DDC9E1
@@ -135,10 +150,9 @@ h1, p{
 
 footer{
     background-color: #FFBC42;
-    padding: 10px;
     width: 100%;
     height: auto;
-    margin:auto;
+    
     text-align: center;
     color: #230823;
     font-weight: bold;
@@ -154,7 +168,4 @@ footer p{
     grid-row: 2;
     display:block;
     margin: auto;
-    padding: 0;
-    
-
 }
