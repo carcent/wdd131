@@ -1,0 +1,15 @@
+@media screen and (min-width:500px){
+
+header, main, footer{
+    max-width: 640px;
+    margin:1rem auto;
+    border: 1px solid #caf0f8 ;
+    padding: 1rem;
+    background-color: black;
+    color:white;
+    
+}
+main{
+    grid-template-columns: 1fr 1fr;
+}
+}
