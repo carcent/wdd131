@@ -111,6 +111,7 @@ h2{
     box-sizing: border-box; 
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     text-align: center;
+    border-bottom: 1px solid #130113;
     height: 10px;
     padding:40px;
     
@@ -118,18 +119,16 @@ h2{
 .description{
     grid-row: 4;
     grid-column: 2/3;
-    border-top: 1px solid #130113;
+    display:block;
     margin: 2px;
-    padding:10px;
+    
 
 }
 .arg{
-    grid-row: 4;
     grid-column: 1;
-    margin: 2px;
-    width: 75px;
-    height: 50px;;
-
+    grid-row: 3;
+    display:block;
+    margin: 20px;
 }
 .right{
     grid-column: 2;
