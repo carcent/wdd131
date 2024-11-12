@@ -37,9 +37,9 @@ nav{
 }
 nav ul li {
     background-color: #451145;
-    height: 10px;
+    height: 30px;
     list-style: none; 
-    line-height: 80px; 
+    line-height: 20px; 
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -51,6 +51,12 @@ nav a {
     font-weight: bold;
     gap:50px;
 }
+nav a:hover {
+    color:#491fe0;
+    background-color:#E6CDE6;
+    border-radius: 3px;
+}
+
 
 main{
     grid-column: 1;
