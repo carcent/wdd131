@@ -112,10 +112,18 @@ h1, p{
 }
 .description{
     grid-row: 4;
-    grid-column: 1 / 3;
+    grid-column: 2/3;
     border-top: 1px solid #130113;
     margin: 2px;
     padding:10px;
+
+}
+.arg{
+    grid-row: 4;
+    grid-column: 1;
+    margin: 2px;
+    width: 75px;
+    height: 50px;;
 
 }
 .right{
