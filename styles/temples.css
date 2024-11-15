@@ -1,17 +1,38 @@
+:root {
+   
+    --primary-color: #AF1B3F;  
+    --secondary-color: #89B0AE; 
+    --background-color: #F7E7CE;  
+    --text-color: #592720; 
+    --footer-bg-color: #FFBC42; 
+    
+    
+    --font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', sans-serif;
+
+ 
+    --header-padding: 10px;
+    --image-max-width: 300px;
+    --image-margin: 20px;
+    
+ 
+    --gap: 20px;
+    --figcaption-margin-top: 10px;
+}
+
 
 body{
     display:grid;
     grid-template-rows:auto 1fr auto;
     grid-template-columns: 1fr 3fr;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #F7E7CE;
-    color: #592720;
+    font-family: var(--font-family);
+    background-color: var(--background-color);
+    color: var(--text-color);
 }
 header{
     display: flex;
     justify-content: space-between;
     margin:0;
-    padding:10px;
+    padding:var(--header-padding);
     text-align: center;
     grid-column: 1/ -1;
 
@@ -33,10 +54,10 @@ nav ul li {
 
 nav ul li a{
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    color:#AF1B3F;
+    color:var(--primary-color);
 }
 nav a:hover {
-    color:#89B0AE;
+    color:var(--secondary-color);
     background-color:#19323C;
     border-radius: 3px;
 }
@@ -57,9 +78,9 @@ main{
     
     display:grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px;
-    padding: 20px;
-    max-width: 100%;
+    gap: var(--gap);
+    padding: var(--gap);
+    max-width: var(--image-max-width);
 
 }
 .hamburger {
@@ -99,7 +120,7 @@ h1{
 
 img {
     margin:20px;
-    width: 100%;
+    width: var(--image-max-width);
     height: auto;
 
 }
@@ -117,8 +138,8 @@ img {
     margin-top: 10px; 
 }
 footer{
-    background-color: #FFBC42;
-    width: 100%;
+    background-color:var(--footer-bg-color);
+    width: var(--image-max-width);
     height: auto;
     
     text-align: center;
