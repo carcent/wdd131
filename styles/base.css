@@ -71,7 +71,7 @@ main{
     justify-content: space-between; 
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr 2fr;
+    grid-template-rows: auto 1fr auto;
     gap: 20px;
       
 }
@@ -129,6 +129,7 @@ h2{
     grid-row: 3;
     display:block;
     margin: 20px;
+    align-items: center;
 }
 .right{
     grid-column: 2;

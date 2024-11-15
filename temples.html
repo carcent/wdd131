@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content ="width=device-width, initial-scale=1.0">    
+        <title>Temple Album</title>
+        <meta name="author" content="Carla Centurion">
+        <meta name="description" content="This page is a display of an album of different Temples of The church of Jesus Christ of Later day saints">
+        <link rel="stylesheet" href="styles/temples.css"> 
+        <link rel="stylesheet" href="styles/temples-large.css"> 
+        <script src="scripts/temples.js" defer></script>
+        
+        
+    </head>
+    <body>
+        <header>
+            <h1>Temple Album</h1>
+            <div class="hamburger" onclick="toggleMenu()">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Old</a></li>
+                    <li><a href="#">New</a></li>
+                    <li><a href="#">Large</a></li>
+                    <li><a href="#">small</a></li>    
+                </ul>    
+            </nav>
+        </header>
+
+        <main>
+            <h2>Home</h2>
+            <div class id="aligncenter">
+                <div class="img-holder">
+                    <img src="images/buenos-aires.jpg" alt="Buenos Aires Temple">
+                    <p>Buenos Aires Temple</p>
+                </div>
+                <div class="img-holder">
+                    <img src="images/Joao-pessoa.jpg" alt="Joao Pessoa Temple">
+                    <p>Joao Pessoa Temple</p>
+                </div>
+                <div class="img-holder">
+                    <img src="images/layton.jpeg" alt="Layton Temple">
+                    <p>Layton Temple</p>
+                </div>
+                <div class="img-holder">
+                    <img src="images/michigan.jpg" alt="Michigan Temple">
+                    <p>Michigan Temple</p>
+                </div>
+                <div class="img-holder">
+                    <img src="images/puebla.jpeg" alt="Puebla Temple">
+                    <p>Puebla Temple</p>
+                </div>
+                <div class="img-holder">
+                    <img src="images/salta.jpeg" alt="Salta Temple">
+                    <p>Salta Temple</p>
+                </div>
+                <div class="img-holder">
+                    <img src="images/san-jose.jpg" alt="San Jose Temple">
+                    <p>San Jose Temple</p>
+                </div>
+                <div class="img-holder">
+                    <img src="images/san-pedro.jpeg" alt="San Pedro Temple">
+                    <p>San Pedro Temple</p>
+                </div>
+                <div class="img-holder">
+                    <img src="images/provo.jpg" alt="Provo Temple">
+                    <p>Provo Temple</p>
+                </div>
+            </div>
+
+
+        </main>
+        <footer>
+            <p>© <span id="lastYear"></span> ❤️​ Carla Centurion ❤️​</p>
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </footer>
+        <script src="scripts/getdates.js" defer></script>
+    </body>
