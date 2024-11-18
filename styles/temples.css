@@ -60,6 +60,7 @@ nav ul li a{
 nav a:hover {
     color:var(--secondary-color);
     background-color:#19323C;
+    padding:10px;
     border-radius: 3px;
     color:#89B0AE;
 }
