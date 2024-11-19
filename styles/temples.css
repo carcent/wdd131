@@ -1,6 +1,6 @@
 :root {
    
-    --primary-color: #AF1B3F;  
+    --primary-color: #6F021D;  
     --secondary-color: #89B0AE; 
     --background-color: #F7E7CE;  
     --text-color: #592720; 
@@ -69,16 +69,56 @@ h2{
     justify-content: center;
 }
 
-
 main{
-    
-    display:grid;
-    grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
     padding: var(--gap);
     max-width: 100%;
 
 }
+
+.title{
+    margin:0;
+    padding:0;
+    border:0;
+}
+h1{
+    font-family:Arial, Helvetica, sans-serif; 
+}
+.figure{
+    text-align: center;
+
+}
+figure img {
+    margin:var(--image-margin);
+    width: 300px;
+    height: auto;
+}
+
+.img-holder {
+    text-align: center;
+    margin: var(--image-margin);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.img-holder img{
+    width: 200px;
+    max-width: var(--image-max-width);
+    height:auto;
+    object-fit: cover;
+}
+.img-holder figcaption {
+    margin-top: var(--figcaption-margin-top);
+    font-weight: bold;
+}
+    .img-holder figcaption {
+    text-align: center;
+    margin-top: 5px;
+    font-family: var(--picture-font);
+}
+
 .hamburger {
     display: none;
     cursor: pointer;
@@ -109,54 +149,6 @@ main{
     transform: rotate(-45deg) translateY(-10px);
 }
 
-.title{
-    margin:0;
-    padding:0;
-    border:0;
-
-}
-h1{
-    font-family:Arial, Helvetica, sans-serif; 
-}
-.figure{
-    text-align: center;
-
-}
-figure img {
-    margin:var(--image-margin);
-    width: 300px;
-    height: auto;
-}
-.aligncenter {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); 
-    gap: var(--gap);
-}
-
-.img-holder {
-    text-align: center;
-    margin: var(--image-margin);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-}
-
-.img-holder img{
-    width: 200px;
-    max-width: var(--image-max-width);
-    height:auto;
-    object-fit: cover;
-}
-.img-holder figcaption {
-    margin-top: var(--figcaption-margin-top);
-    font-weight: bold;
-}
-    .img-holder figcaption {
-    text-align: center;
-    margin-top: 5px;
-    font-family: var(--picture-font);
-}
 footer{
     background-color:var(--footer-bg-color);
     width: 100%;
