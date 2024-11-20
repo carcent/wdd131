@@ -104,8 +104,9 @@ figure img {
 }
 
 .img-holder img{
-    width: 200px;
+    
     max-width: var(--image-max-width);
+    width: 200px;
     height:auto;
     object-fit: cover;
 }
@@ -131,11 +132,11 @@ figure img {
 
   .hamburger .bar {
     display:block;
-    width: 30px;
+    width: 35px;
     height: 4px;
     background-color: rgb(6, 18, 87);
-    border-radius: 4px;
-    margin: 6px auto;
+    border-radius: 70px;
+    margin: 5px auto;
     transition: transform 0.3s ease, opacity 0.3s ease;
   }
   .hamburger.open .bar:nth-child(1) {
@@ -169,7 +170,7 @@ footer p{
         display: none; 
         width: 100%;
         text-align: center;
-        background-color: #333;
+        background-color: #0b801b;
         position: absolute;
         top: 60px; 
         left: 0;
