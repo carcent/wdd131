@@ -1,6 +1,8 @@
-
+:root {
+    --background-color: red;
+}
 header{
-    background-color: red;
+    background-color: var(--background-color);
     height:80px;
     width:100%;
     text-align: center;
@@ -10,7 +12,7 @@ h1{
 }
 main{
     display:grid;
-    grid-template-columns: ;
+    grid-template-columns:1fr 1fr;
     grid-template-rows:auto 1fr auto ;
     }
 
@@ -43,4 +45,7 @@ footer p{
     color: #fcfafc;
 }
 
+.weather::after {
+    ☀️
+}
 
