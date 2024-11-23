@@ -1,5 +1,5 @@
 :root {
-    --background-color: red;
+    --background-color: rgb(238, 27, 27);
     --margin:15px;
     --padding: 10px;
 }
@@ -16,7 +16,8 @@ header{
     text-align: center;
 }
 h1{
-    color:blue;
+    background-color: blue;
+    color:rgb(253, 253, 253);
 }
 main{
     flex:1;
@@ -78,7 +79,7 @@ footer p{
 }
 
 .weather h2::after {
-   content: ☀️; 
+   content: "\2600"; 
 }
 @media (max-width: 768px) {
     .img{
@@ -93,7 +94,6 @@ footer p{
         width: 100%;
         text-align: center;
         background-color: white;
-  
         font-size: 14px; 
     }
 
