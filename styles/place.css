@@ -98,12 +98,12 @@ footer p{
     }
 
     .data {
-        top: 20px;
-        left: 20px;
+        margin-top: 20px;
+        
     }
 
     .weather {
-        bottom: 20px;
-        right: 20px;
+        margin-top: 20px;
+        
     }
 }
