@@ -1,5 +1,13 @@
 :root {
     --background-color: red;
+    --margin:15px;
+    --padding: 10px;
+}
+body {
+    display:flex;
+    flex-direction: column;
+    height: 100vh;
+    margin:0;
 }
 header{
     background-color: var(--background-color);
@@ -11,41 +19,91 @@ h1{
     color:blue;
 }
 main{
-    display:grid;
-    grid-template-columns:1fr 1fr;
-    grid-template-rows:auto 1fr auto ;
+    flex:1;
+    position:relative;
+    z-index: 1;
+    padding-bottom: 100px;
     }
 
-.data{
-    
-    display:block;
-    grid-column: 1;
-    margin: 20px;
-    padding: 10px;
-    background-color: rgb(235, 168, 168);
+    .img {
+        position: fixed;
+        top:100px;
+        left:0;
+        width: 100%;
+        height: 100vh;
+        object-fit: cover;;
+        z-index: -1;    
+    }
+
+    .data, .weather{
+    position:absolute;
+    margin: var(--margin);
+    padding: var(--padding);
+    text-align: center;
+    background-color: rgb(235, 168, 168,0.8);
     border:1px solid red;
-    color:black    
+    color:black;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2);    
 }
-.img {
-    margin:0;
-    
+.data{
+    top:5px;
+    left:10px;
+    max-width: 200px;
 }
+.weather{
+    top:200px;
+    right:10px;
+    max-width: 200px;
+}
+
 footer{
+    
     background-color: rgb(9, 29, 206);
     width: 100%;
     height: 100px;
-    
     text-align: center;
     font-weight: bold;
-    grid-column: 1 / 4;
-    grid-row: 3;
+    position:relative;
+    z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 0;
 }   
 footer p{
     font-family:"Lato", serif ;
     color: #fcfafc;
+    margin:0;
+    line-height: 1.5;
 }
 
-.weather::after {
-    ☀️
+.weather h2::after {
+   content: ☀️; 
 }
+@media (max-width: 768px) {
+    .img{
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+    .data, .weather {
+        position:relative;
+        margin: var(--margin);
+        max-width: 100%;
+        width: 100%;
+        text-align: center;
+        background-color: white;
+  
+        font-size: 14px; 
+    }
 
+    .data {
+        top: 20px;
+        left: 20px;
+    }
+
+    .weather {
+        bottom: 20px;
+        right: 20px;
+    }
+}
