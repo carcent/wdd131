@@ -1,0 +1,21 @@
+:root{
+    --bord: 1px, solid black;
+}
+*{
+    box-sizing: border-box;
+}
+main{
+    margin: 0;
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	padding: 0.5rem;
+	width: 760px;
+	background-color: #eee2e2;
+}
+::marker{
+    color:navy;
+    font-size: 2rem;
+    font-variant:small-caps;
+}
+::before {
+    content:✔;
+}

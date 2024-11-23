@@ -1,0 +1,46 @@
+
+header{
+    background-color: red;
+    height:80px;
+    width:100%;
+    text-align: center;
+}
+h1{
+    color:blue;
+}
+main{
+    display:grid;
+    grid-template-columns: ;
+    grid-template-rows:auto 1fr auto ;
+    }
+
+.data{
+    
+    display:block;
+    grid-column: 1;
+    margin: 20px;
+    padding: 10px;
+    background-color: rgb(235, 168, 168);
+    border:1px solid red;
+    color:black    
+}
+.img {
+    margin:0;
+    
+}
+footer{
+    background-color: rgb(9, 29, 206);
+    width: 100%;
+    height: 100px;
+    
+    text-align: center;
+    font-weight: bold;
+    grid-column: 1 / 4;
+    grid-row: 3;
+}   
+footer p{
+    font-family:"Lato", serif ;
+    color: #fcfafc;
+}
+
+
