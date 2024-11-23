@@ -103,7 +103,10 @@ footer p{
     }
 
     .weather {
-        margin-top: 20px;
-        
+        margin-top: 20px;   
+    }
+    .weather-icon svg{
+        display: block;
+
     }
 }

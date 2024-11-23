@@ -1,5 +1,8 @@
 @media (min-width: 769px) {
     .data, .weather {
         position: absolute;
-    }     
+    }   
+    .weather-icon svg{
+        display:none;
+    }
 }
