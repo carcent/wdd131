@@ -90,11 +90,6 @@ h1{
     text-align: center;
 
 }
-figure img {
-    margin:var(--image-margin);
-    width: 300px;
-    height: auto;
-}
 
 .img-holder {
     text-align: center;
@@ -108,8 +103,8 @@ figure img {
 .img-holder img{
     
     max-width: var(--image-max-width);
-    width: 200px;
-    height:auto;
+    width: 300px;
+    height:200px;
     object-fit: cover;
 }
 .img-holder figcaption {
@@ -190,6 +185,4 @@ footer p{
     nav.open ul {
         display: block;
     }
-
-
 }
