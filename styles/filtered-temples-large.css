@@ -1,0 +1,20 @@
+@media (min-width: 769px) {
+    nav ul {
+        display: flex; 
+        justify-content: center;
+       
+    }
+
+    #aligncenter{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+
+    nav ul li {
+        margin: 0 20px;
+    }
+
+    .hamburger {
+        display: none; 
+    }
+}
