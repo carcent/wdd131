@@ -15,38 +15,33 @@
 </head>
     
 <body>
-        <header>
-            <h1>Temple Album</h1>
-            <div class="hamburger" onclick="toggleMenu()">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>
-            </div>
+    <header>
+        <h1>Temple Album</h1>
+        <div class="hamburger" onclick="toggleMenu()">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
             
-            <nav id="navMenu">
-                <ul>
-                    <li><a href="https://carcent.github.io/wdd131/temples.html">Home</a></li>
-                    <li><a href="https://www.wordreference.com/es/translation.asp?tranword=old">Old</a></li>
-                    <li><a href="https://www.wordreference.com/es/translation.asp?tranword=new">New</a></li>
-                    <li><a href="https://www.wordreference.com/es/translation.asp?tranword=large">Large</a></li>
-                    <li><a href="https://www.wordreference.com/es/translation.asp?tranword=small">small</a></li>    
-                </ul>    
-            </nav>
-        </header>
+        <nav id="navMenu">
+            <ul>
+                <li><a href="https://carcent.github.io/wdd131/filtered-temples.html">Home</a></li>
+                <li><a href="#" id="old">Old</a></li>
+                <li><a href="#" id="new">New</a></li>
+                <li><a href="#" id="large">Large</a></li>
+                <li><a href="#" id="small">small</a></li>    
+            </ul>    
+        </nav>
+    </header>
 
-        <main>
-            <div class id="title"></div>
-                <h2>Home</h2>
-            <div></div>
-            <div id="imageContainer"></div>
-           
-            
-
-        </main>
-        <footer>
-            <p>© <span id="lastYear"></span> ❤️​ Carla Centurion ❤️​</p>
-            <p>Last Modification: <span id="lastModified"></span></p>
-        </footer>
-        <script src="scripts/getdates.js" defer></script>
+    <main>
+        <h2>Home</h2>
+        <div class="image-Container"></div>
+    </main>
+    <footer>
+        <p>© <span id="lastYear"></span> ❤️​ Carla Centurion ❤️​</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
 </body>
 </html>

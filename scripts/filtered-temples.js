@@ -6,6 +6,7 @@ function toggleMenu(){
     hamburger.classList.toggle('open');
 }
 
+
 const temples = [
     {
       templeName: "Aba Nigeria",
@@ -89,15 +90,78 @@ const temples = [
       }
     ];
 
-const imageContainer = document.getElementById('imageContainer');
+createTempleCard(temples);
+const oldLink = document.querySelector("#old");
+const newLink = document.querySelector("#new");
+const largeLink = document.querySelector("#large");
+const smallLink = document.querySelector("#small");
 
-temples.forEach(temple => {
-    const img = document.createElement('img');
-    img.src = temple.imageUrl;
-    img.alt = 'Temple: ${temple.templeName}, Location: ${temple.location}, Dedication: ${temple.dedicated}, Area: ${temple.area}';
-    img.loading = "lazy";
-    imageContainer.appendChild(img);
-})
+function getYear(dateString) {
+    const dateParts = dateString.split(", ");
+    const year = dateParts[0];
+    return parseInt(year);
+}
+
+function filterOldTemples(temples, year){
+    return temples.filter(temple => getYear(temple.dedicated) < year);
+}
+function filterNewTemples(temples, year) {
+    return temples.filter(temple =>getYear(temple.dedicated) >= year);
+}
+function filterLargeTemples(temples, size) {
+    return temples.filter(temple => temple.area > size);
+}
+
+function filterSmallTemples(temples, size) {
+    return temples.filter(temple => temple.area <= size);
+}
+oldLink.addEventListener("click", () => {
+    const filteredOldTemples = filterOldTemples(temples, 2000);
+    createTempleCard(filteredOldTemples); 
+});
+
+newLink.addEventListener("click", () => {
+    const filteredNewTemples = filterNewTemples(temples, 2000);
+    createTempleCard(filteredNewTemples); 
+});
+largeLink.addEventListener("click", () => {
+    const filteredLargeTemples = filterLargeTemples(temples, 50000);
+    createTempleCard(filteredLargeTemples); 
+});
+smallLink.addEventListener("click", () => {
+    const filteredLargeTemples = filterLargeTemples(temples, 50000);
+    createTempleCard(filteredSmallTemples); 
+});
+function createTempleCard(templesList){
+    const imageContainer = document.querySelector(".image-Container");
+    imageContainer.innerHTML = "";
+
+    templesList.forEach(temple => {
+    let card = document.createElement("section");
+    let name = document.createElement("h3");
+    let location = document.createElement("p");
+    let dedicated = document.createElement("p");
+    let area = document.createElement("p");
+    let img = document.createElement("img");
+    
+    name.textContent = temple.templeName;
+    location.innerHTML = `<span class="label">Location:</span> ${temple.location}`;
+    dedicated.innerHTML = `<span class="label">Dedicated:</span> ${temple.dedicated}`;
+    area.innerHTML = `<span class="label">Size:</span> ${temple.area} sq ft`;
+    img.setAttribute("src", temple.imageUrl);
+    img.setAttribute("alt", `${temple.templeName} Temple`);
+    img.setAttribute("loading", "lazy");
+
+    card.appendChild(name);
+    card.appendChild(location);
+    card.appendChild(dedicated);
+    card.appendChild(area);
+    card.appendChild(img);
+    
+    document.querySelector(".image-Container").appendChild(card);
+
+});
+}
 
 
 

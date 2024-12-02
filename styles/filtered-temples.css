@@ -1,6 +1,6 @@
 :root {
    
-    --primary-color: #6F021D;  
+    --primary-color: #a5062d;  
     --secondary-color: #89B0AE; 
     --background-color: #F7E7CE;  
     --text-color: #592720; 
@@ -18,12 +18,9 @@
     --gap: 20px;
     --figcaption-margin-top: 10px;
 }
-@font-face {
-    font-family: 'Host Grotesk';
-    font-display: swap;
-    src: url('path/to/font.woff2') format('woff2');
+*{
+    margin: 0;
 }
-
 
 body{
     display:grid;
@@ -48,8 +45,8 @@ nav ul {
     display: flex;
     padding:0;
     justify-content: space-evenly;
-    opacity: 0;
-    transition: opacity 0.3s ease;
+
+
 }
 nav ul li {
 
@@ -83,30 +80,35 @@ main{
 
 }
 
-.title{
-    margin:0;
-    padding:0;
-    border:0;
-}
 h1{
     font-family:Arial, Helvetica, sans-serif; 
 }
-.figure{
+
+.image-Container {  
+    display: grid;  
+    grid-template-columns: (3, 1fr);
+    gap: 20px;
+    }
+.image-Container section {
+    height: 250px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     text-align: center;
-
+    padding: 15px;
+    border: 1px solid #e9ca98;
+    background-color: #b4b8b7;
 }
-#imageContainer {  
-    display: flex; /* Use flexbox for layout */  
-    flex-wrap: wrap; /* Allow images to wrap */  
-    gap: 10px; /* Space between images */  
-}  
 
-#imageContainer img {  
-    width: 200px; /* Set fixed width */  
-    height: 150px; /* Set fixed height */  
-    object-fit: cover; /* Ensure images cover the area without distortion */  
-    border-radius: 8px; /* Optional: adds a slight rounding to corners */  
-}  
+.image-Container img {  
+    width: 200px; 
+    height: 150px;
+    padding-left: 20px;
+    object-fit: cover; 
+    border-radius: 8px;  
+} 
+
 
 .hamburger {
     display: none;
