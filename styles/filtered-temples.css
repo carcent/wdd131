@@ -68,10 +68,6 @@ nav a:hover {
     border-radius: 3px;
     color:#89B0AE;
 }
-h2{
-    display: block;
-    justify-content: center;
-}
 
 main{
     gap: var(--gap);
@@ -84,6 +80,12 @@ main{
 h1{
     font-family:Arial, Helvetica, sans-serif; 
 }
+
+
+h2{
+    justify-content: center;
+}
+
 
 .image-Container {  
     display: grid;  
@@ -100,7 +102,8 @@ h1{
     text-align: center;
     padding: 15px;
     border: 1px solid #e9ca98;
-    background-color: #b4b8b7;
+    background-color: #c3e9df;
+    color: #130313;
 }
 
 .image-Container img {  
