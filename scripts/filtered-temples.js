@@ -116,7 +116,7 @@ function filterSmallTemples(temples, size) {
     return temples.filter(temple => temple.area <= size);
 }
 oldLink.addEventListener("click", () => {
-    const filteredOldTemples = filterOldTemples(temples, 2000);
+    const filteredOldTemples = filterOldTemples(temples, 1900);
     createTempleCard(filteredOldTemples); 
 });
 
@@ -125,11 +125,11 @@ newLink.addEventListener("click", () => {
     createTempleCard(filteredNewTemples); 
 });
 largeLink.addEventListener("click", () => {
-    const filteredLargeTemples = filterLargeTemples(temples, 50000);
+    const filteredLargeTemples = filterLargeTemples(temples, 90000);
     createTempleCard(filteredLargeTemples); 
 });
 smallLink.addEventListener("click", () => {
-    const filteredSmallTemples = filterSmallTemples(temples, 50000);
+    const filteredSmallTemples = filterSmallTemples(temples, 10000);
     createTempleCard(filteredSmallTemples); 
 });
 
