@@ -129,9 +129,11 @@ largeLink.addEventListener("click", () => {
     createTempleCard(filteredLargeTemples); 
 });
 smallLink.addEventListener("click", () => {
-    const filteredLargeTemples = filterLargeTemples(temples, 50000);
+    const filteredSmallTemples = filterSmallTemples(temples, 50000);
     createTempleCard(filteredSmallTemples); 
 });
+
+
 function createTempleCard(templesList){
     const imageContainer = document.querySelector(".image-Container");
     imageContainer.innerHTML = "";
