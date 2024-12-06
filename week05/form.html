@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+    <form method="get" action="review.html" class="wff5">
+        <fieldset>
+            <Legend>Product Name*</Legend>
+        <select name="product" id="product" required>
+            <option value="">Please Select a Product</option>
+            <option value=""></option>
+        </select>
+        </fieldset>   
+        <fieldset>
+            <legend>Overall Rating</legend>
+            <div>Rating</div>
+            <label ></label><input type="radio" name="rating" value="1">&#9734</label>
+            <label ></label><input type="radio" name="rating" value="2">&#9734 &#9734</label>
+            <label ></label><input type="radio" name="rating" value="3">&#9734 &#9734 &#9734</label>
+            <label ></label><input type="radio" name="rating" value="4">&#9734 &#9734 &#9734 &#9734</label>
+            <label ></label><input type="radio" name="rating" value="5">&#9734 &#9734 &#9734 &#9734 &#9734</label>
+        </fieldset>
+        <fieldset>
+            <legend>Date of Installation</legend>
+            <label> Date installed <input type="date" name="date" required></label> 
+            <div>Which features did you find useful in the product? (check all that apply)</div>
+            <label ></label><input type="checkbox" name="durabe" value="yes">Durability</label>
+            <label ></label><input type="checkbox" name="easiness" value="yes">Ease of Use</label>
+            <label ></label><input type="checkbox" name="perform" value="yes">Performance</label>
+            <label ></label><input type="checkbox" name="design" value="yes">Design</label>
+        </fieldset>    
+    </form>
+    
+
+    </main>
+    <footer>
+        <p>© <span id="lastYear"></span> ❤️​ Carla Centurion ❤️​</p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js" defer></script>
+    
+</body>
+
+</html>
