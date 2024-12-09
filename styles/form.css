@@ -66,6 +66,7 @@ input[type="text"], textarea, select {
     border: 1px solid #CCCCCC; 
     border-radius: 5px; 
     width: 100%;
+    height: 3em;
 }
 input[type="text"]:focus, textarea:focus {
     background-color: #e0f7fa; 
