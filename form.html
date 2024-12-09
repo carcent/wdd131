@@ -7,53 +7,50 @@
     <meta name="author" content="Carla Centurion">
     <meta name="description" content="a Form for product Review">
     <link rel="stylesheet" href="styles/form.css"> 
+    
 </head>
 <body>
     <main>
     <form method="get" action="review.html" class="wff5">
         <fieldset>
             <Legend>Product Name*</Legend>
-        <select name="product" id="product" required>
-            <option value="">Please Select a Product</option>
-            <option value=""></option>
-        </select>
+            <select id="product-select" name="product-select" required></select>
         </fieldset>   
         <fieldset>
-            <legend>Overall Rating</legend>
-            <div>Rating</div>
-            <label ><input type="radio" name="rating" value="1">&#9734</label>
-            <label ><input type="radio" name="rating" value="2">&#9734 &#9734</label>
-            <label ><input type="radio" name="rating" value="3">&#9734 &#9734 &#9734</label>
-            <label ><input type="radio" name="rating" value="4">&#9734 &#9734 &#9734 &#9734</label>
-            <label ><input type="radio" name="rating" value="5">&#9734 &#9734 &#9734 &#9734 &#9734</label>
+            <legend>Overall Rating*</legend>
+            <label ><input type="radio" id="option1" name="rating" value="1" required>&#9734</label>
+            <label ><input type="radio" id="option2" name="rating" value="2" required>&#9734 &#9734</label>
+            <label ><input type="radio" id="option3" name="rating" value="3" required>&#9734 &#9734 &#9734</label>
+            <label ><input type="radio" id="option4" name="rating" value="4" required>&#9734 &#9734 &#9734 &#9734</label>
+            <label ><input type="radio" id="option5" name="rating" value="5" required>&#9734 &#9734 &#9734 &#9734 &#9734</label>
         </fieldset>
         <fieldset>
-            <legend>Date of Installation</legend>
-            <label> Date installed <input type="date" name="date" required></label> 
+            <legend>Date of Installation*</legend>
+            <label><input type="date" id="date" name="date" required></label> 
             <div>Which features did you find useful in the product? (check all that apply)</div>
-            <label ><input type="checkbox" name="durabe" value="yes">Durability</label>
-            <label ><input type="checkbox" name="easiness" value="yes">Ease of Use</label>
-            <label ><input type="checkbox" name="perform" value="yes">Performance</label>
-            <label ><input type="checkbox" name="design" value="yes">Design</label>
+            <label ><input type="checkbox" id="durable" name="durable" value="yes">Durability</label>
+            <label ><input type="checkbox" id="easiness" name="easiness" value="yes">Ease of Use</label>
+            <label ><input type="checkbox" id="perform" name="perform" value="yes">Performance</label>
+            <label ><input type="checkbox" id="design" name="design" value="yes">Design</label>
         </fieldset>    
         <fieldset>
             <legend>Written Review(optional)</legend>
-            <label><input type="textarea" id="review" name="review" name></label>
+            <label><input type="textarea" id="review" name="review"></label>
         </fieldset>
         <fieldset>
             <legend>Your Name(optional)</legend>
-            <label><input type="text" name="fname"></label>
-            
+            <label><input type="text" id="fname" name="fname"></label>   
         </fieldset>
-    </form>
-    
 
+        <input type="submit" value="Post Review">
+    </form>  
     </main>
     <footer>
         <p>© <span id="lastYear"></span> ❤️​ Carla Centurion ❤️​</p>
         <p>Last Modification: <span id="lastModified"></span></p>
     </footer>
     <script src="scripts/getdates.js" defer></script>
+    <script src="scripts/form.js"></script>
     
 </body>
 
