@@ -1,5 +1,5 @@
 :root {
-background-color: aliceblue;
+background-color: rgb(246, 248, 250);
 padding: 1px;
 margin:.5em;
 
@@ -15,19 +15,35 @@ main{
     justify-content: center;
     align-items: center;
   }
+  h1{
+    font-family: "Roboto", serif;
+    font-size: 2em;
+    color: #230823;
+  }
 fieldset{
+    font-family: "Nunito Sans", sans-serif;
     padding: 10px;
     border:1px solid #d3d3d3;
     padding: 1em;
     margin-bottom: 1.5em;
 }
+#date{
+    height: 1.5em;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  
+}
 
   legend {
     background-color: #443244;
+    color:#F8F8F8;
+    font-size: 1.2em;
+    font-weight: bold;
+    padding: 0.3em 0.5em;
     height: 20px;
     width: 100%;
     align-content: center;
-    color:#F8F8F8;
+    
     border:none;
     font-size: 17px;
   }
@@ -45,9 +61,32 @@ label{
     justify-content: space-evenly;
     width: 100%;
 }
-  submit{
-    justify-content: center;
-  }
+input[type="text"], textarea, select {
+    background-color: #FAFAFA; 
+    color: #333333;
+    padding: 0.5em; 
+    border: 1px solid #CCCCCC; 
+    border-radius: 5px; 
+    width: 100%;
+}
+input[type="text"]:focus, textarea:focus {
+    background-color: #e0f7fa; 
+    border-color: #00bcd4; 
+    outline: none; 
+}
+
+input[type="submit"] {
+    margin-left: 200px;
+    background-color: #2196F3; 
+    color: #FFFFFF; 
+    border: none;
+    padding: .8em;
+    border-radius: 5px;
+    cursor: pointer;
+}
+input[type="submit"]:hover {
+    background-color: #1976D2;
+}
 footer{
     background-color: #FFBC42;
     width: 100%;

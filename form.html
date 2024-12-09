@@ -3,14 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form</title>
+    <title>Product Review</title>
     <meta name="author" content="Carla Centurion">
     <meta name="description" content="a Form for product Review">
     <link rel="stylesheet" href="styles/form.css"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Edu+AU+VIC+WA+NT+Pre:wght@400..700&family=Hind+Mysuru:wght@300;400;500;600;700&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Parkinsans:wght@300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     
 </head>
 <body>
     <main>
+        <h1>Product Review</h1>
     <form method="get" action="review.html" class="wff5">
         <fieldset>
             <Legend>Product Name*</Legend>
@@ -29,7 +33,8 @@
         <fieldset>
             <legend>Date of Installation*</legend>
             <label><input type="date" id="date" name="date" required></label> 
-            <div>Which features did you find useful in the product? (check all that apply)</div>
+
+            <label ><div id="">Which features did you find useful in the product?<br>(check all that apply)</div></label>
             <label ><input type="checkbox" id="durable" name="durable" value="yes">Durability</label>
             <label ><input type="checkbox" id="easiness" name="easiness" value="yes">Ease of Use</label>
             <label ><input type="checkbox" id="perform" name="perform" value="yes">Performance</label>
@@ -37,7 +42,7 @@
         </fieldset>    
         <fieldset>
             <legend>Written Review(optional)</legend>
-            <label><input type="textarea" id="review" name="review"></label>
+            <textarea id="review" name="review"></textarea>
         </fieldset>
         <fieldset>
             <legend>Your Name(optional)</legend>
