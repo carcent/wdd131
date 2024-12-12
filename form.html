@@ -15,11 +15,11 @@
 <body>
     <main>
         <h1>Product Review</h1>
-    <form method="get" action="review.html" class="wff5">
+    <form id="reviewForm" method="get" action="review.html" class="wff5">
         <fieldset>
             <legend>Product Name*</legend>
             <select id="product-select" name="product-select" required>
-            <option value="" disabled selected>Select a product</option>    
+            <option value="" disabled selected>Select a Product...</option>    
             </select>
         </fieldset>   
         <fieldset>
@@ -51,8 +51,9 @@
             <label for="fname"><input type="text" id="fname" name="fname"></label>   
         </fieldset>
 
-        <input type="submit" value="Post Review">
-    </form>  
+        <button type="submit" value="Post Review">Submit Review</button>
+    </form> 
+    
     </main>
     <footer>
         <p>© <span id="lastYear"></span> ❤️​ Carla Centurion ❤️​</p>

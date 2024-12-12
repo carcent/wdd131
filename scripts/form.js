@@ -33,27 +33,9 @@ defaultOption.value = "";
 defaultOption.textContent = "Select a Product...";
 selectElement.appendChild(defaultOption);
 
-products.forEach(product =>{
+products.forEach(product => {
   const option = document.createElement("option");
   option.value = product.id;
   option.textContent = product.name;
   selectElement.appendChild(option);
-})
-
-let reviewCount = localStorage.getItem('reviewCount');
-if (!reviewCount) {
-  reviewCount = 0; 
-}
-
-document.getElementById('reviewForm').addEventListener('submit', function (event) {
-  event.preventDefault(); 
-
-  reviewCount++; 
-  
-  localStorage.setItem('reviewCount', reviewCount); 
-  alert("Your review has been submitted!"); 
 });
-
-if (document.getElementById('reviewCount')) {
-document.getElementById('reviewForm').textContent=reviewCount
-}
