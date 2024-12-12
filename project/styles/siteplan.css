@@ -21,15 +21,14 @@ header{
     
     text-align: center;
     grid-column: 1/ -1;
-
 }
-
 
 nav ul {
     list-style-type: none;
     display: flex;
     padding:0;
     justify-content: space-evenly;
+    align-items: center;
    
 
 }
@@ -37,7 +36,6 @@ nav ul li {
 
     margin-right:20px;
     position: relative;
-
 }
 
 nav ul li::after {
@@ -46,7 +44,6 @@ nav ul li::after {
     right: -10px; 
     height:20px;
     width: 2px;
-    top: 0;
     color: black;
   }
   nav ul li:last-child::after {
@@ -59,10 +56,10 @@ nav ul li a{
 }
 nav a:hover {
     
-    background-color:#093446;
+    background-color:#a53f04;
     padding:10px;
     border-radius: 3px;
-    color:#89B0AE;
+    color:#edf0f0;
 }
 h1 {
     font-family: "Parkinsans", sans-serif;
@@ -104,6 +101,7 @@ display:grid;
 grid-template-columns: 1fr 1fr 1fr;
 gap: 10px;
 margin-top: 50px;
+margin-bottom: 50px;
 }
   #commentInput {
     width: 80%;  
@@ -111,14 +109,14 @@ margin-top: 50px;
     padding: 10px;  
     font-size: 16px;  
     border: 2px solid #093446;  
-    border-radius: 8px;  /* Bordes redondeados */
-    margin-bottom: 20px;  /* Espaciado debajo del textarea */
-    box-sizing: border-box;  /* Para que el padding y el borde no afecten el tamaño total */
+    border-radius: 8px;  
+    margin-bottom: 20px; 
+    box-sizing: border-box; 
 }
   #addCommentButton {
     font-size: 16px; 
     padding: 8px 16px; 
-    background-color: #4CAF50;
+    background-color: #2B582D;
     color: white;
     border: none; 
     border-radius: 8px; 
@@ -127,7 +125,7 @@ margin-top: 50px;
 }
 
 #addCommentButton:hover {
-    background-color: #227927;
+    background-color: #07800d;
 }
 
   .removeCommentButton {
