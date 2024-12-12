@@ -31,7 +31,7 @@ document.getElementById('addCommentButton').addEventListener('click', function()
     const commentText = commentInput.value.trim();
     
     if (commentText !== '') {
-        comment.push(commentText);
+        comments.push(commentText);
         saveComments();
         renderComments();
         commentInput.value = '';

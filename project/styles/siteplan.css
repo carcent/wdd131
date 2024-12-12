@@ -3,16 +3,27 @@ body{
     padding: 10px;
     background-color: #ece2c6;
 }
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;  
+  justify-content: center; 
+  min-height: 100vh;  
+  text-align: center;  
+}
 header{
     background-color:#ebd28f;
     display: flex;
     justify-content: space-between;
     margin:0;
+    padding-left: 20px;
+    padding-right: 20px;
     
     text-align: center;
     grid-column: 1/ -1;
 
 }
+
 
 nav ul {
     list-style-type: none;
@@ -58,9 +69,122 @@ h1 {
     color:#093446;
   }
 
-h2{
-
-}
   h2, p{
     font-family: "Hind Mysuru", sans-serif;
+    
   }
+  .content {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between; 
+    gap: 20px;
+    padding-bottom: 15px ;
+    border-bottom: 2px solid rgb(90, 61, 8) ;
+}
+.text {
+  flex: 1; 
+  max-width: 60%; 
+  margin-top: 10px;
+}
+
+.img {
+  flex: 1; 
+  max-width: 40%; 
+  margin-top: 15px;
+  margin-left: 200px;
+}
+
+.img img {
+  width: 100%; 
+  height: auto; 
+  border-radius: 8px;
+}
+.main-text{
+display:grid;
+grid-template-columns: 1fr 1fr 1fr;
+gap: 10px;
+margin-top: 50px;
+}
+  #commentInput {
+    width: 80%;  
+    height: 120px; 
+    padding: 10px;  
+    font-size: 16px;  
+    border: 2px solid #093446;  
+    border-radius: 8px;  /* Bordes redondeados */
+    margin-bottom: 20px;  /* Espaciado debajo del textarea */
+    box-sizing: border-box;  /* Para que el padding y el borde no afecten el tamaño total */
+}
+  #addCommentButton {
+    font-size: 16px; 
+    padding: 8px 16px; 
+    background-color: #4CAF50;
+    color: white;
+    border: none; 
+    border-radius: 8px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+#addCommentButton:hover {
+    background-color: #227927;
+}
+
+  .removeCommentButton {
+    font-size: 12px; 
+    padding: 5px 10px; 
+    background-color: #ff6f61; 
+    color: white; 
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer;
+    transition: background-color 0.3s ease; 
+}
+
+.removeCommentButton:hover {
+    background-color: #bb3f2e;
+}
+
+footer{
+  background-color: #ffb121;
+  width: 100%;
+  height: auto;
+  
+  text-align: center;
+  color: #230823;
+  font-weight: bold;
+  grid-column: 1 / 3;
+  grid-row: 3;
+}   
+footer p{
+  color: #230823;
+}
+@media (max-width: 768px) {
+  header, nav ul, .content, .main-text {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  
+  }
+  nav ul li {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  .content {
+    flex-direction: column;
+  }
+
+  .text, .img {
+    max-width: 100%;
+    margin: 10px 0;
+  }
+
+  .main-text {
+    grid-template-columns: 1fr;
+  }
+
+}
