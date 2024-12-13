@@ -221,9 +221,6 @@ footer p{
   .img {
     margin-left: 0;
   }
-  .main-text {
-    grid-template-columns: 1fr;
-  }
 
 .image-link img{
   width: 200px;
