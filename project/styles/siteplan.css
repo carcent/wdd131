@@ -102,6 +102,7 @@ grid-template-columns: 1fr 1fr 1fr;
 gap: 10px;
 margin-top: 50px;
 margin-bottom: 50px;
+font-display: swap;
 }
   #commentInput {
     width: 80%;  
@@ -220,6 +221,9 @@ footer p{
   }
   .img {
     margin-left: 0;
+  }
+  .main-text {
+    grid-template-columns: 1fr;
   }
 
 .image-link img{
